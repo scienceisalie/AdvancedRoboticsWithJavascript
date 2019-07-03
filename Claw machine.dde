@@ -1,0 +1,15 @@
+var points = [
+[.3, .2, .1],
+[-.27, .13, .18]
+]
+var open1 = 150
+var close1 = 30
+new Job({name: "j2", 
+ do_list: [Dexter.move_all_joints([NaN, NaN, NaN, NaN, NaN, 0, open1]),
+ 		   Dexter.move_to([points[0][0] + .03, points[0][1] + .03, points[0][2] + .03]),
+ 		   Dexter.move_all_joints([NaN, NaN, NaN, NaN, NaN, 0, close1]),
+                Dexter.move_to([points[1][0], points[1][1], points[1][2]]),
+                Dexter.move_all_joints([NaN, NaN, NaN, NaN, NaN, 0, open1]),
+                Dexter.move_all_joints([0, 0, 0, 0, 0])]
+
+		})
