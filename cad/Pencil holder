@@ -9,8 +9,8 @@ function getParameterDefinitions(){
 function main(params) { 
  var r1 = params.r1;
  var r2 = params.r2;
- var w = 7.5;
- var h = 15;
+ var w = 8;
+ var h = 15.5;
  
 return difference(cube([20, 20, 40]).translate([-15, -10, 0]),
 translate([10, 0, 30],cylinder({r1:r1,r2:r2,h:40}).rotateY(-90)), union(
